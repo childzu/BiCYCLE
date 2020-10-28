@@ -5,7 +5,7 @@ import "./Header.scss";
 
 const Header = props => (
   <Link href="/">
-    <div className="Header">{props.appTitle}</div>
+    <div className="Header"></div>
   </Link>
 );
 
