@@ -9,12 +9,13 @@
     cursor: pointer;
   
     .Icon {
-      font-size: 20px;
+      font-size: 24px;
     }
   
     .Label {
+      padding-top: 5px;
       font-size: 12px;
-      text-transform: capitalize;
+      text-transform: uppercase;
     }
   }
   

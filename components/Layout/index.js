@@ -1,12 +1,12 @@
 import Head from "next/head";
 
-import Header from "./Header";
-import NavBar from "./NavBar";
+import TopBar from "../Topbar";
+import NavBar from "../NavBar";
 
 import "./Layout.scss";
-import "./index.scss";
+import "../index.scss";
 
-import navButtons from "../config/buttons";
+import navButtons from "../../config/buttons";
 
 const Layout = props => {
   const appTitle = `BiCYCLE`;
@@ -18,8 +18,8 @@ const Layout = props => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
       </Head>
-      <NavBar navButtons={navButtons} appTitle={appTitle}/>
-      <Header appTitle={appTitle} />
+      <TopBar navButtons={navButtons} appTitle={appTitle}/>
+      <NavBar appTitle={appTitle} />
       <div className="Content">{props.children}</div>
     </div>
   );

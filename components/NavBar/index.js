@@ -1,12 +1,12 @@
 // components/Header.js
 import Link from "next/link";
 
-import "./Header.scss";
+import "./NavBar.scss";
 
-const Header = props => (
+const NavBar = props => (
   <Link href="/">
     <div className="Header"></div>
   </Link>
 );
 
-export default Header;
+export default NavBar;

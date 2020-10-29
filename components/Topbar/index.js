@@ -1,14 +1,14 @@
-import "./NavBar.scss";
-import NavButton from "./NavButton";
+import "./TopBar.scss";
+import NavButton from "../NavButton";
 import Link from 'next/link';
 
-const NavBar = props => (
+const TopBar = props => (
     <div className="NavBarTop">
         <Link href="/">
             <div className="Logo">{props.appTitle}</div>
         </Link>
         
-        <div className="NavBar">
+        <div className="NavBarTopMenu">
             {props.navButtons.map(button => (
             <NavButton
                 key={button.path}
@@ -21,4 +21,4 @@ const NavBar = props => (
     </div>
 );
 
-export default NavBar;
+export default TopBar;
