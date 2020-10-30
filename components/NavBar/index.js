@@ -4,9 +4,7 @@ import Link from "next/link";
 import "./NavBar.scss";
 
 const NavBar = props => (
-  <Link href="/">
-    <div className="Header"></div>
-  </Link>
+  <div className="NavBar"></div>
 );
 
 export default NavBar;
