@@ -6,7 +6,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  background: $secondary;
+  background: $DarkBlue;
   height: 70px;
   width: 100%;
 
@@ -16,7 +16,7 @@
     font-family: $logo-font;
     font-size: 24px;
     font-weight: bold;
-    color: $primary;
+    color: $ShadowOfLightBlue;
     cursor: pointer;
   }
 
@@ -30,7 +30,7 @@
   
     font-family: $core-font;
     font-size: 22px;
-    color: $primary-light;
+    color: $ShadowOfLightBlue;
   
     //box-shadow: 0px -2px 15px rgba(50, 50, 50, 0.45);
   
@@ -41,7 +41,7 @@
     }
   
     .active {
-      color: $on-active;
+      color: $LighterBlue;
     }
   }
 }
