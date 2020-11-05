@@ -1,13 +1,16 @@
+@import "../../theme/theme";
+
 .menu-container {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    margin: 5px 20px 0 20px;
+    
+    font-size: 12px;
+    text-transform: capitalize;
 
     .menu-trigger {
-        background: #ffffff;
+        background: $ShadowOfLightBlue;
         border-radius: 90px;
         cursor: pointer;
         display: flex;
@@ -37,12 +40,12 @@
       }
 
       .menu {
-        background: #ffffff;
+        background: $ShadowOfLightBlue;
         border-radius: 8px;
         position: absolute;
         top: 60px;
         right: 0;
-        width: 300px;
+        width: 120px;
         box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
         opacity: 0;
         visibility: hidden;
@@ -55,7 +58,7 @@
         visibility: visible;
         transform: translateY(0);
       }
-      
+
       .menu ul {
         list-style: none;
         padding: 0;
@@ -68,8 +71,12 @@
       
       .menu li a {
         text-decoration: none;
-        color: #333333;
+        color: $Black;
         padding: 15px 20px;
         display: block;
+      }
+
+      .menu li a:hover {
+        color: $LighterBlue;
       }
   }

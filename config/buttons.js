@@ -23,11 +23,11 @@ const navButtons = [
     path: "/mycart",
     icon: <FontAwesomeIcon icon={faShoppingCart} />
   },
-  {
-    label: "Profile",
-    path: "/profile",
-    icon: <FontAwesomeIcon icon={faUser} />
-  }
+  // {
+  //   label: "Profile",
+  //   path: "/profile",
+  //   icon: <FontAwesomeIcon icon={faUser} />
+  // }
 ];
 
 export default navButtons;

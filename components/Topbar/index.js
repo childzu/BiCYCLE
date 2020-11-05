@@ -18,10 +18,8 @@ const TopBar = props => (
                 icon={button.icon}
             />
             ))}
+            <div><DropdownMenu/></div>
         </div>
-
-        <div><DropdownMenu/></div>
-
     </div>
 );
 
