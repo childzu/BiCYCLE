@@ -1,6 +1,7 @@
 import "./TopBar.scss";
 import NavButton from "../NavButton";
 import Link from 'next/link';
+import DropdownMenu from "../DropdownMenu";
 
 const TopBar = props => (
     <div className="NavBarTop">
@@ -18,6 +19,9 @@ const TopBar = props => (
             />
             ))}
         </div>
+
+        <div><DropdownMenu/></div>
+
     </div>
 );
 
