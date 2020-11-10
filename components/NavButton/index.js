@@ -5,7 +5,7 @@ import "./NavButton.scss";
 
 const NavButton = props => (
   <Link href={props.path}>
-    <div className={`NavButton ${props.router.pathname === props.path ? "active" : ""}`}>
+    <div className={`NavButton ${props.router.pathname.includes(props.path) ? "active" : ""}`}>
       <div className="Icon">{props.icon}</div>
       <span className="Label">{props.label}</span>
     </div>

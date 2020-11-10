@@ -19,8 +19,7 @@ const Layout = props => {
         <meta charSet="utf-8" />
       </Head>
       <TopBar navButtons={navButtons} appTitle={appTitle}/>
-      <NavBar appTitle={appTitle} />
-      <div className="Content">{props.children}</div>
+      <div>{props.children}</div>
     </div>
   );
 };
