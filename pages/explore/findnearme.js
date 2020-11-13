@@ -1,19 +1,17 @@
-// pages/explore.js
-
 import Layout from "../../components/Layout";
 import NavBar from "../../components/NavBar";
 import exploreMenus from "../../config/exploreMenus";
 
-const ExploreView = props => {
-    const appTitle = `Explore`;
+const NearMe = props => {
+    const appTitle = `Search`;
     return (
         <Layout>
             <NavBar NavBarMenus={exploreMenus} appTitle={appTitle}/>
             <div>
-                Explore View
+                Near me
             </div>
         </Layout>
     );
 }
 
-export default ExploreView;
+export default NearMe;

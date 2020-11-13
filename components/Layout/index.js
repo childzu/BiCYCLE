@@ -6,7 +6,7 @@ import NavBar from "../NavBar";
 import "./Layout.scss";
 import "../index.scss";
 
-import navButtons from "../../config/buttons";
+import navButtons from "../../config/navButtons";
 
 const Layout = props => {
   const appTitle = `BiCYCLE`;
@@ -18,7 +18,7 @@ const Layout = props => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="utf-8" />
       </Head>
-      <TopBar navButtons={navButtons} appTitle={appTitle}/>
+      <TopBar TopMenus={navButtons} appTitle={appTitle}/>
       <div>{props.children}</div>
     </div>
   );

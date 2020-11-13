@@ -1,11 +1,15 @@
-// components/Header.js
-import Link from "next/link";
-
 import "./NavBar.scss";
+import NavBarButton from "../NavBarButton";
 
 const NavBar = props => (
   <div className="NavBar">
-    <Link href="/explore/search">Search</Link>
+    {props.NavBarMenus.map(button => (
+      <NavBarButton
+          key={button.path}
+          path={button.path}
+          label={button.label}
+      />
+    ))}
   </div>
 );
 

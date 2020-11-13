@@ -10,7 +10,7 @@ const TopBar = props => (
         </Link>
         
         <div className="NavBarTopMenu">
-            {props.navButtons.map(button => (
+            {props.TopMenus.map(button => (
             <NavButton
                 key={button.path}
                 path={button.path}
